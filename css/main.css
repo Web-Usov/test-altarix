@@ -36,48 +36,59 @@ header .logo span{
 	font-size: 100px;
 	color: #b7bbbc;
 }
-.top_nav{
+.header-nav{
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: bottom;
 	float: right;
 	margin-top: 45px;
 	margin-right: 60px;
 }
-.top_nav ul li{
+.header-nav ul li{
 	display: inline-block;	
 	margin-left: 15px;
 	margin-right: 15px;
+	vertical-align: bottom;
 }
-.top_nav ul li a{
+.header-nav ul li a{
 	display: block;
 	padding: 5px;
 	color: #fff;
 	text-decoration: none;
 	font-size: 22px;
+	margin-top: 4px;
+  	transition: all .2s;
+}
+.header-nav ul li a:hover{
+	margin-bottom: 4px;
+	margin-top: 0px;
+
+
+}
+.header-nav ul li a:active{
+	margin-bottom: 3px;
+	margin-top: 1px;
+
+
 }
 
 
-#slider{
+.banner{
 	display: block;
 	width: 100%;
 	position: relative;
 	height: 400px;
 }
-.carousel-slide {
+.banner-slide {
 	position: absolute;
 	left: 0;
 	width: 100%;
-	display: none;
+	display: block;
 	height: auto;
 	box-sizing: border-box;
 }
-.carousel-slide.on {
-	z-index: 9;
-	opacity: 1;
-}
 
-/*FOR CAROUSEL WITH ARROW AND HOVER OPTIONS*/
-.arrow {
+
+.banner-arrow-left,.banner-arrow-right {
 	position: absolute;
 	top: 175px;
 	cursor: pointer;
@@ -86,16 +97,29 @@ header .logo span{
 	padding: 25px;
 	z-index: 10;
 	background-repeat: no-repeat;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+  	transition: all .1s;
 }
-.left{
+.banner-arrow-left:hover,.banner-arrow-right:hover {
+	padding: 30px;
+	top: 170px;
+
+}
+.banner-arrow-left{
 	left: -70px;
 	background-image: url('../img/arrow-l.png');
 }
-.right {
+.banner-arrow-right {
 	right: -70px;
 	background-image: url('../img/arrow-r.png');
 }
-
+.banner-arrow-left:hover{	
+	left: -75px;
+}
+.banner-arrow-right:hover{
+	right: -75px;
+}
 
 .banner-img,.banner-info{
 	width: 49%;
@@ -132,7 +156,7 @@ header .logo span{
   	-moz-box-sizing: content-box;
   	box-sizing: content-box;
   	cursor: pointer;
-  	font-size: 20px;
+  	font-size: 14px;
 
 }
 .btn-banner {  
@@ -141,6 +165,7 @@ header .logo span{
   color: rgba(255,255,255,0.9);
   background: #286d4b;
   transition: all .1s;
+  	font-size: 20px;
 }
 .btn-banner:hover {
   background: rgba(56,145,101,1);
@@ -381,60 +406,60 @@ input.input:active,input.input:focus{
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
-.footer2 .about,.footer2 .test,.footer2 .logo{
+.footer2-about,.footer2-test,.footer2-logo{
 	box-sizing: border-box;
 	display: inline-block;
 	vertical-align: top;
 
 }
-.footer2 .about,.footer2 .test{
+.footer2-about,.footer2-test{
 	padding-left: 40px;
 
 }
-.footer2 .about{
+.footer2-about{
 	width: 180px;
 }
-.footer2 .test{
+.footer2-test{
 	width: 380px;
 }
-.footer2 .test p{
+.footer2-test p{
 	font-size: 14px;
 	color: #575558;
 	line-height: 21px;	
 }
-.footer2 .test small{
+.footer2-test small{
 	width: 200px;
 	display: block;
 	font-size: 14px;
 	color: #b6b5b5;
 }
-.footer2 .logo{
+.footer2-logo{
 	margin-left: 20px;
 	margin-top: 10px;
 }
-.footer2 .logo span{	
+.footer2-logo span{	
 	font-size: 100px;
 	color: #575558;
 	display: block;
 }
-.footer2 .logo small{	
+.footer2-logo small{	
 	font-size: 14px;
 	color: #b6b5b5;
 	display: block;
 	margin-top: 15px;
 }
-.footer2 .about span,.footer2 .test span{
+.footer2-about span,.footer2-test span{
 	font-size: 22px;
 	color: #fff;
 }
-.footer2 ul{
+.footer2-about ul{
 	margin-top: 14px;
 }
-.footer2 ul li a{
+.footer2-about  ul li a{
 	color: #575558;
 	text-decoration: none;
 	font-size: 14px;
 }
-.footer2 ul li a:hover{
+.footer2-about  ul li a:hover{
 	color: #fff;
 }
